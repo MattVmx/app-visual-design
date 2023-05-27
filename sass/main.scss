@@ -1,0 +1,105 @@
+
+
+$success: #B8FF72;
+
+@font-face {
+    font-family: 'axiformaregular';
+    src: url('../fonts/kastelov_-_axiforma_regular-webfont.eot');
+    src: url('../fonts/kastelov_-_axiforma_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kastelov_-_axiforma_regular-webfont.woff2') format('woff2'),
+         url('../fonts/kastelov_-_axiforma_regular-webfont.woff') format('woff'),
+         url('../fonts/kastelov_-_axiforma_regular-webfont.ttf') format('truetype'),
+         url('../fonts/kastelov_-_axiforma_regular-webfont.svg#axiformaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap";
+
+
+body{
+  font-weight: 300;
+  background: #010318;
+  font-family: 'axiformaregular';
+}
+
+
+.main{
+  background-image: url('../img/webswash1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner{
+  height: auto;
+  h1{
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  .btn{
+    width: 17.875rem;
+    height: 3.5rem;
+  }
+}
+
+.contenido-banner{
+  height: auto;
+}
+
+.btn{
+  &:hover{
+  box-shadow: 0px 0px 20px 10px #B8FF72;
+  }
+}
+
+.contacto{
+  background: #FF3E86;
+  height:auto;
+  h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+  }
+  .btn{
+    width: 17.875rem;
+    height: 3.5rem;
+  }
+}
+
+.contenedor-contacto{
+  height: auto;
+}
+
+@media all and (max-width: 520px){
+  .banner{
+    h1{
+      font-size: 3.125rem;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+    }
+  }
+}
+
+@media all and (max-width: 375px){
+  .contacto{
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media all and (max-width: 320px){
+  .banner{
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+  .contacto{
+    h1{
+      font-size: 1.875rem;
+    }
+  }
+}
